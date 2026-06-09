@@ -209,7 +209,7 @@ ol {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.search-form__label:has(.search-form__textfield:focus-visible) {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
@@ -238,7 +238,7 @@ ol {
   text-decoration: underline;
 }
 
-.search-form__label:has(.search-form__checkbox:focus-visible) {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
@@ -251,18 +251,18 @@ ol {
   font-size: 18px;
   background-color: transparent;
   cursor: pointer;
+  min-height: 34px;
+  width: 194px;
 }
 
 .search-form__submit-button {
   align-self: flex-end;
   width: 194px;
-  height: 34px;
 }
 
 .more-button {
   width: calc(100% - 4px);
   margin: 0 2px 2px;
-  min-height: 34px;
 }
 
 .button:hover {
